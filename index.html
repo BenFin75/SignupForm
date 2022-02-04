@@ -20,7 +20,7 @@
             <p class="big">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
             <p class="big">You <em>know</em> you want to.</p>
         </div>
-        <form action="./data" method="post">
+        <form action="./index.html" method="post">
             <fieldset>
                 <p class="big">Let's do this!</p>
                 <div class="r1">
@@ -40,7 +40,14 @@
                     </div>
                    <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input required type="tel" id="phone" autocomplete="tel" pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" placeholder=" ">
+                        <input required 
+                            type="tel" 
+                            id="phone" 
+                            autocomplete="tel" 
+                            pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" 
+                            placeholder=" "
+                            oninvalid="this.setCustomValidity('Please use (123)-123-1234 or 123-123-1234')"
+                            oninput="this.setCustomValidity('')">
                    </div>
                 </div>
                 <div class="r3">
