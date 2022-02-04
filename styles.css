@@ -38,7 +38,7 @@ body {
 .credit {
     position: fixed;
     bottom: 10px;
-    left: 20%;
+    left: 15%;
     font-size: large;
     color: var(--text-color);
 }
